@@ -3,25 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Homework 11</title>
+    <title>Image Search App</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <form class="form">
-      <label>
-        <input
-          class="form-input"
-          type="text"
-          name="search-text"
-          placeholder="Search images..."
-          required
-        />
-      </label>
-      <button type="submit">Search</button>
+      <input
+        class="form-input"
+        type="text"
+        name="search-text"
+        placeholder="Search images..."
+        required
+      />
+      <button class="form-button" type="submit">Search</button>
     </form>
 
-    <span class="loader"></span>
+    <p class="loader-text hidden">Loading images, please wait...</p>
+
     <ul class="gallery"></ul>
+
+    <div class="controls">
+      <button type="button" class="load-more hidden">Load more</button>
+      <span class="loader hidden"></span>
+    </div>
 
     <script type="module" src="./main.js"></script>
   </body>
